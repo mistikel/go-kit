@@ -2,21 +2,14 @@
 
 ## How to run
 - Generate protobuf
-<br>
 `cd pb && protoc movie.proto --go_out=plugins=grpc:.`
 
 
 - Instal depedency
-<br>
 `go mod download`
 
 - Run 
-<br>
 `go run main.go`
-
-
-
-
 
 
 # Query
