@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package pb;
+
+service Movie {
+    rpc SearchMovie(SearchRequest) returns (SearchReplys) {}
+}
+
+message SearchRequest {
+    string keyword = 1;
+    int64 page = 2;
+}
+
+message SearchReply {
+    string title = 1;
+    string year = 2;
+    string id = 3;
+    string type = 4;
+    string poster = 5;
+}
+
+message SearchReplys {
+    repeated SearchReply Search = 1;
+}
